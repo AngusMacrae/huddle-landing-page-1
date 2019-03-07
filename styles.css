@@ -118,6 +118,7 @@ footer i:hover {
     main {
         flex-direction: row;        
     }
+
     
     #content-text {
         display: flex;
@@ -125,10 +126,17 @@ footer i:hover {
         justify-content: center;
         flex: 1 0 400px;
         padding-left: 40px;
+        text-align: left;
     }
     
     #content-text > button {
         margin-bottom: 0;
+        margin-left: 0;
+        padding: 1em 3em;
+    }
+    
+    #content-text > p {
+        margin: 0;
     }
     
     footer {
