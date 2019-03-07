@@ -48,10 +48,11 @@ body {
     padding: 50px;
     
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-    
     display: flex;
     flex-direction: column;
 }
@@ -104,4 +105,39 @@ footer > a {
 footer i:hover {
     transform: scale(1.1);
     transition: scale 0.2;
+}
+
+@media only screen and (min-width: 800px) {
+    
+/*
+    * {
+        border: 1px solid white;
+    }
+*/
+    
+    body {
+        justify-content: space-between;
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+    }
+    
+    main {
+        flex-direction: row;        
+    }
+    
+    #content-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 0 400px;
+        padding-left: 40px;
+    }
+    
+    #content-image {
+        
+    }
+    
+    footer {
+        margin-top: 0;
+    }
 }
