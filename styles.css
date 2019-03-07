@@ -85,6 +85,7 @@ footer {
     margin: 2em auto;
     transition: transform 0.2s, font-weight 0.2s;
     cursor: pointer;
+    margin-bottom: 5em;
 }
 
 #content-text > button:hover {
@@ -94,7 +95,6 @@ footer {
 
 footer {
     margin-top: auto;
-    text-align: right;
 }
 
 footer > a {
@@ -108,12 +108,6 @@ footer i:hover {
 }
 
 @media only screen and (min-width: 800px) {
-    
-/*
-    * {
-        border: 1px solid white;
-    }
-*/
     
     body {
         justify-content: space-between;
@@ -133,11 +127,12 @@ footer i:hover {
         padding-left: 40px;
     }
     
-    #content-image {
-        
+    #content-text > button {
+        margin-bottom: 0;
     }
     
     footer {
         margin-top: 0;
+        text-align: right;
     }
 }
